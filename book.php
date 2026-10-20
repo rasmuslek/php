@@ -30,4 +30,4 @@ class Book
 }
 
 $book = new Book("Clean Code", "Robert C. Martin", 2008, 39.99);
-echo $book->getInfo(); // Clean Code by Robert C. Martin (2008) - $39.99
+echo $book->getInfo(); 

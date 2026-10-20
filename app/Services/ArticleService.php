@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Services;
+namespace app\Services;
 
 use app\Models\Article;
 
 class ArticleService
 {
-    public function publish(Article $article): void
+    public function publish(Article $article)
     {
-        echo 'Publishing article: "' . $article->title
-            . '" by ' . $article->author;
+        return "Publishing article: " . $article->title . " by " . $article->author;
     }
 }
+

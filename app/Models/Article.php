@@ -1,11 +1,17 @@
 <?php
 
-namespace App\Models;
+namespace app\Models;
 
 class Article
 {
-    public function __construct(
-        public string $title,
-        public string $author
-    ) {}
+    public $title;
+    public $content;
+    public $author;
+
+    public function __construct($title, $content, $author)
+    {
+        $this->title = $title;
+        $this->content = $content;
+        $this->author = $author;
+    }
 }
